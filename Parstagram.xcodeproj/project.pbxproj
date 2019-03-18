@@ -14,6 +14,7 @@
 		D2DBA35E223D3FB200195253 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DBA35D223D3FB200195253 /* LoginViewController.swift */; };
 		D2DBA360223D3FBC00195253 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DBA35F223D3FBC00195253 /* FeedViewController.swift */; };
 		D2DBA362223D47C800195253 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DBA361223D47C800195253 /* CameraViewController.swift */; };
+		D2DBA366223F284300195253 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DBA365223F284300195253 /* PostCell.swift */; };
 		D558CF2B49EF715FC2AB97F4 /* Pods_Parstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD458E924C5260E6CA0939D5 /* Pods_Parstagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		D2DBA35D223D3FB200195253 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D2DBA35F223D3FBC00195253 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		D2DBA361223D47C800195253 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		D2DBA365223F284300195253 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				D2DBA35D223D3FB200195253 /* LoginViewController.swift */,
 				D2DBA35F223D3FBC00195253 /* FeedViewController.swift */,
 				D2DBA361223D47C800195253 /* CameraViewController.swift */,
+				D2DBA365223F284300195253 /* PostCell.swift */,
 			);
 			path = Parstagram;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				D2DBA362223D47C800195253 /* CameraViewController.swift in Sources */,
 				D2DBA360223D3FBC00195253 /* FeedViewController.swift in Sources */,
 				D2DBA34C223D39E600195253 /* AppDelegate.swift in Sources */,
+				D2DBA366223F284300195253 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
