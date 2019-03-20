@@ -82,7 +82,7 @@
                     <connections>
                         <outlet property="passwordField" destination="aN1-bI-CSe" id="GAt-2s-xRD"/>
                         <outlet property="usernameField" destination="oPa-L0-O28" id="Mg3-9i-98g"/>
-                        <segue destination="ihD-AS-ZWc" kind="presentation" identifier="LoginSegue" id="rou-Sx-q1p"/>
+                        <segue destination="ihD-AS-ZWc" kind="presentation" identifier="loginSegue" id="rou-Sx-q1p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -112,7 +112,7 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qpa-1s-Gpg">
                                                     <rect key="frame" x="8" y="8" width="359" height="285.5"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Joe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kI6-Xv-syE">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kI6-Xv-syE">
                                                     <rect key="frame" x="8" y="242" width="28" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -128,6 +128,7 @@
                                             <constraints>
                                                 <constraint firstItem="qpa-1s-Gpg" firstAttribute="top" secondItem="RtH-IC-DXX" secondAttribute="top" constant="8" id="0GV-YV-wrS"/>
                                                 <constraint firstItem="qpa-1s-Gpg" firstAttribute="leading" secondItem="RtH-IC-DXX" secondAttribute="leading" constant="8" id="3bC-Ny-wvi"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="kI6-Xv-syE" secondAttribute="bottom" constant="50" id="BnM-Wb-m7s"/>
                                                 <constraint firstAttribute="trailing" secondItem="qpa-1s-Gpg" secondAttribute="trailing" constant="8" id="X45-sN-DAe"/>
                                                 <constraint firstItem="rfV-S1-eDM" firstAttribute="top" secondItem="qpa-1s-Gpg" secondAttribute="bottom" constant="8" id="YWd-sW-1nK"/>
                                                 <constraint firstItem="rfV-S1-eDM" firstAttribute="top" secondItem="qpa-1s-Gpg" secondAttribute="bottom" constant="8" id="agn-PF-Eaw"/>
