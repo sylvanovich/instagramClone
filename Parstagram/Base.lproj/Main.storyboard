@@ -62,14 +62,8 @@
                                     <action selector="signup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OwR-gl-NEU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J53-uK-pCY">
-                                <rect key="frame" x="64" y="372" width="81" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <state key="normal" title="Forgot Password"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prinstagram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBl-g6-j7f">
-                                <rect key="frame" x="114" y="83" width="184" height="64"/>
+                                <rect key="frame" x="89" y="82" width="184" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
                                 <nil key="textColor"/>
@@ -102,24 +96,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="324" id="4NQ-U4-iQ1" customClass="PostCell" customModule="Parstagram" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="324"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="335" id="4NQ-U4-iQ1" customClass="PostCell" customModule="Parstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="335"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4NQ-U4-iQ1" id="RtH-IC-DXX">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="334.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qpa-1s-Gpg">
-                                                    <rect key="frame" x="8" y="8" width="359" height="285.5"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="288.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kI6-Xv-syE">
-                                                    <rect key="frame" x="8" y="242" width="28" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="8" y="303" width="30" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photography is my passion. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfV-S1-eDM">
-                                                    <rect key="frame" x="44" y="301.5" width="215" height="21"/>
+                                                    <rect key="frame" x="46" y="304.5" width="215" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -128,11 +122,11 @@
                                             <constraints>
                                                 <constraint firstItem="qpa-1s-Gpg" firstAttribute="top" secondItem="RtH-IC-DXX" secondAttribute="top" constant="8" id="0GV-YV-wrS"/>
                                                 <constraint firstItem="qpa-1s-Gpg" firstAttribute="leading" secondItem="RtH-IC-DXX" secondAttribute="leading" constant="8" id="3bC-Ny-wvi"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="kI6-Xv-syE" secondAttribute="bottom" constant="50" id="BnM-Wb-m7s"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="kI6-Xv-syE" secondAttribute="bottom" id="BnM-Wb-m7s"/>
                                                 <constraint firstAttribute="trailing" secondItem="qpa-1s-Gpg" secondAttribute="trailing" constant="8" id="X45-sN-DAe"/>
                                                 <constraint firstItem="rfV-S1-eDM" firstAttribute="top" secondItem="qpa-1s-Gpg" secondAttribute="bottom" constant="8" id="YWd-sW-1nK"/>
                                                 <constraint firstItem="rfV-S1-eDM" firstAttribute="top" secondItem="qpa-1s-Gpg" secondAttribute="bottom" constant="8" id="agn-PF-Eaw"/>
-                                                <constraint firstAttribute="bottom" secondItem="rfV-S1-eDM" secondAttribute="bottom" constant="1" id="fxK-yk-bpt"/>
+                                                <constraint firstAttribute="bottom" secondItem="rfV-S1-eDM" secondAttribute="bottom" constant="9" id="fxK-yk-bpt"/>
                                                 <constraint firstItem="rfV-S1-eDM" firstAttribute="leading" secondItem="kI6-Xv-syE" secondAttribute="trailing" constant="8" id="oP9-NP-JJN"/>
                                                 <constraint firstItem="kI6-Xv-syE" firstAttribute="leading" secondItem="RtH-IC-DXX" secondAttribute="leading" constant="8" id="wvr-wM-aox"/>
                                             </constraints>

@@ -16,6 +16,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView: UITableView!
     
     var posts = [PFObject]()
+    var numberofPosts: Int!
+    let myrefreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,17 +25,30 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
+        myrefreshControl.addTarget(self, action: #selector(viewDidAppear(_:)), for: .valueChanged)
+        tableView.refreshControl = myrefreshControl
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
+        imageView.contentMode = .scaleAspectFit
+        
+        let image = UIImage(named: "logo")
+        imageView.image = image
+        
+        self.navigationItem.titleView = imageView
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        numberofPosts = 10
         let query = PFQuery(className:"Posts")
         query.includeKey("author")
-        query.limit = 20
+        query.limit = numberofPosts
+        query.order(byDescending: "createdAt")
         
         query.findObjectsInBackground{ ( posts, error ) in
             if posts != nil {
                 self.posts = posts!
                 self.tableView.reloadData()
+                self.myrefreshControl.endRefreshing()
             }
             
         }
@@ -48,7 +63,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let post = posts[indexPath.row]
         let user = post["author"] as! PFUser
         cell.userNameLabel.text = user.username
-        cell.captionViewLabel.text = post["caption"] as! String
+        cell.captionViewLabel.text = post["caption"] as? String
+        
+        tableView.allowsSelection = false
         let imageFile = post["image"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
