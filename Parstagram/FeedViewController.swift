@@ -63,7 +63,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let post = posts[indexPath.row]
         let user = post["author"] as! PFUser
         cell.userNameLabel.text = user.username
-        cell.captionViewLabel.text = post["caption"] as? String
+        cell.captionViewLabel.text = post["caption"] as! String
         
         tableView.allowsSelection = false
         let imageFile = post["image"] as! PFFileObject

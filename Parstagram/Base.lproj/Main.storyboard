@@ -104,31 +104,34 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qpa-1s-Gpg">
-                                                    <rect key="frame" x="8" y="8" width="359" height="288.5"/>
+                                                    <rect key="frame" x="8" y="8" width="359" height="202"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="qpa-1s-Gpg" secondAttribute="height" multiplier="16:9" id="vNT-GX-oJf"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kI6-Xv-syE">
-                                                    <rect key="frame" x="8" y="303" width="30" height="21"/>
+                                                    <rect key="frame" x="8" y="218" width="30" height="108.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photography is my passion. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfV-S1-eDM">
-                                                    <rect key="frame" x="46" y="304.5" width="215" height="21"/>
+                                                    <rect key="frame" x="46" y="306" width="215" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="qpa-1s-Gpg" firstAttribute="top" secondItem="RtH-IC-DXX" secondAttribute="top" constant="8" id="0GV-YV-wrS"/>
-                                                <constraint firstItem="qpa-1s-Gpg" firstAttribute="leading" secondItem="RtH-IC-DXX" secondAttribute="leading" constant="8" id="3bC-Ny-wvi"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="kI6-Xv-syE" secondAttribute="bottom" id="BnM-Wb-m7s"/>
-                                                <constraint firstAttribute="trailing" secondItem="qpa-1s-Gpg" secondAttribute="trailing" constant="8" id="X45-sN-DAe"/>
-                                                <constraint firstItem="rfV-S1-eDM" firstAttribute="top" secondItem="qpa-1s-Gpg" secondAttribute="bottom" constant="8" id="YWd-sW-1nK"/>
-                                                <constraint firstItem="rfV-S1-eDM" firstAttribute="top" secondItem="qpa-1s-Gpg" secondAttribute="bottom" constant="8" id="agn-PF-Eaw"/>
-                                                <constraint firstAttribute="bottom" secondItem="rfV-S1-eDM" secondAttribute="bottom" constant="9" id="fxK-yk-bpt"/>
-                                                <constraint firstItem="rfV-S1-eDM" firstAttribute="leading" secondItem="kI6-Xv-syE" secondAttribute="trailing" constant="8" id="oP9-NP-JJN"/>
-                                                <constraint firstItem="kI6-Xv-syE" firstAttribute="leading" secondItem="RtH-IC-DXX" secondAttribute="leading" constant="8" id="wvr-wM-aox"/>
+                                                <constraint firstItem="rfV-S1-eDM" firstAttribute="leading" secondItem="kI6-Xv-syE" secondAttribute="trailing" constant="8" id="NJR-hW-1Me"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rfV-S1-eDM" secondAttribute="trailing" constant="8" id="QfD-9J-KoO"/>
+                                                <constraint firstAttribute="trailing" secondItem="qpa-1s-Gpg" secondAttribute="trailing" constant="8" id="WEL-Or-KLq"/>
+                                                <constraint firstItem="kI6-Xv-syE" firstAttribute="leading" secondItem="RtH-IC-DXX" secondAttribute="leading" constant="8" id="YGa-ir-BP8"/>
+                                                <constraint firstAttribute="bottom" secondItem="kI6-Xv-syE" secondAttribute="bottom" constant="8" id="c7c-My-exI"/>
+                                                <constraint firstItem="qpa-1s-Gpg" firstAttribute="leading" secondItem="RtH-IC-DXX" secondAttribute="leading" constant="8" id="cds-yG-meX"/>
+                                                <constraint firstItem="qpa-1s-Gpg" firstAttribute="top" secondItem="RtH-IC-DXX" secondAttribute="top" constant="8" id="fuD-qn-qJF"/>
+                                                <constraint firstItem="kI6-Xv-syE" firstAttribute="top" secondItem="qpa-1s-Gpg" secondAttribute="bottom" constant="8" id="kQM-BT-5Bz"/>
+                                                <constraint firstAttribute="bottom" secondItem="rfV-S1-eDM" secondAttribute="bottom" constant="8" id="yDf-Lx-Tdk"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
